@@ -22,14 +22,26 @@
     .section { background-color: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; animation: fadeInUp 1s ease-out; }
     .section h2.glow { font-size: 2rem; color: #00ffff; text-shadow: 0 0 8px #00ffff; margin-bottom: 15px; }
     .section h3 { margin-top: 15px; color: #00ffff; }
-    .section ul { list-style-type: disc; padding-left: 20px; margin-top: 10px; }
+    
+    /* ✅ Bullet points fix */
+    .section ul { 
+      list-style-type: disc; 
+      padding-left: 25px; 
+      margin-top: 10px; 
+    }
+    .section ul ul { 
+      list-style-type: circle; 
+      padding-left: 20px; 
+      margin-top: 5px; 
+    }
+
     .section p, .section li { font-size: 1rem; line-height: 1.6; color: #ddd; }
 
-    /* ⭐ Sub-headers (Multicon, Fiesta, etc.) ko thoda niche shift karne ke liye */
+    /* Sub-headers in list (Multicon, Fiesta) */
     .section ul li strong {
-      display: block;        /* Strong ko block banaya taaki alag line le */
-      margin-top: 12px;      /* Upar se space diya */
-      margin-bottom: 6px;    /* Niche ka chhota gap */
+      display: block;        
+      margin-top: 12px;      
+      margin-bottom: 6px;    
       color: #00ffff;
     }
 
@@ -43,6 +55,17 @@
     @keyframes fadeIn { to { opacity: 1; } }
     @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* ✅ Full block hover effect */
+    p, li, h1, h2, h3, strong, em {
+      transition: transform 0.3s ease, color 0.3s ease;
+      display: block;
+    }
+    p:hover, li:hover, h1:hover, h2:hover, h3:hover, strong:hover, em:hover {
+      transform: scale(1.05);
+      color: #fff;
+    }
+
     @media (max-width: 768px) {
       header h1.glow { font-size: 2.2rem; }
       .section h2.glow { font-size: 1.6rem; }
@@ -71,14 +94,16 @@
     <section class="section fade-in">
       <h2 class="glow">Experience</h2>
       <ul>
-        <li><strong>TCET-ISTE: WORKING COMMITTEE</strong>
+        <li>
+          <strong>TCET-ISTE: WORKING COMMITTEE</strong>
           <ul>
             <li>AC stem 7.0 – Achieved over 50 offline registrations within four days.</li>
             <li>Designed several artworks for the event.</li>
             <li>Managed Scavenger Hunt and discipline team.</li>
           </ul>
         </li>
-        <li><strong>Multicon 2025</strong>
+        <li>
+          <strong>Multicon 2025</strong>
           <ul>
             <li>Review paper presentation</li>
             <li>Workshop on C/C++</li>
@@ -86,7 +111,8 @@
             <li>Discipline team (Day 2)</li>
           </ul>
         </li>
-        <li><strong>Fiesta 2025</strong>
+        <li>
+          <strong>Fiesta 2025</strong>
           <ul>
             <li>Dry run of performances</li>
             <li>Technical team: rules and slots</li>
@@ -228,16 +254,18 @@
       <p>📧 Email: <a href="mailto:lavyadamania@gmail.com">lavyadamania@gmail.com</a></p>
       <p>📍 Location: Borivali East</p>
 
-      <div class="icon-grid">
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/lavya-damania-6778472a7/" target="_blank" title="LinkedIn">
-          <i class="fab fa-linkedin" style="font-size:32px; color:#0A66C2;"></i>
-        </a>
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/lavya_damania_/" target="_blank" title="Instagram">
-          <i class="fab fa-instagram" style="font-size:32px; color:#E1306C;"></i>
-        </a>
-      </div>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/lavya-damania-6778472a7/" target="_blank" title="LinkedIn">
+            LinkedIn Profile
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/lavya_damania_/" target="_blank" title="Instagram">
+            Instagram Profile
+          </a>
+        </li>
+      </ul>
     </section>
 
   </main>
