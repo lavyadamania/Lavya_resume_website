@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lavya Damania | Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+    }
+    #particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+    header { text-align: center; margin-top: 60px; animation: fadeInDown 1s ease-out; }
+    header h1.glow { font-size: 3rem; color: #00ffff; text-shadow: 0 0 10px #00ffff; }
+    header p { font-size: 1.2rem; color: #ccc; margin-top: 10px; }
+    main { max-width: 1000px; margin: auto; padding: 40px 20px; display: flex; flex-direction: column; gap: 40px; }
+    .section { background-color: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; animation: fadeInUp 1s ease-out; }
+    .section h2.glow { font-size: 2rem; color: #00ffff; text-shadow: 0 0 8px #00ffff; margin-bottom: 15px; }
+    .section h3 { margin-top: 15px; color: #00ffff; }
+    .section ul { list-style-type: disc; padding-left: 20px; margin-top: 10px; }
+    .section p, .section li { font-size: 1rem; line-height: 1.6; color: #ddd; }
+
+    /* ⭐ Sub-headers (Multicon, Fiesta, etc.) ko thoda niche shift karne ke liye */
+    .section ul li strong {
+      display: block;        /* Strong ko block banaya taaki alag line le */
+      margin-top: 12px;      /* Upar se space diya */
+      margin-bottom: 6px;    /* Niche ka chhota gap */
+      color: #00ffff;
+    }
+
+    .icon-grid { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; justify-content: center; }
+    .icon-grid a { display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; background-color: #1a1a1a; border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .icon-grid a:hover { transform: scale(1.2) rotate(5deg); box-shadow: 0 0 10px #00ffff; }
+    .icon-grid img, .icon-grid i { max-width: 40px; max-height: 40px; color: #00ffff; }
+    a { color: #00ffff; text-decoration: none; transition: color 0.3s ease; }
+    a:hover { color: #fff; text-decoration: underline; }
+    .fade-in { opacity: 0; animation: fadeIn 1.5s ease forwards; }
+    @keyframes fadeIn { to { opacity: 1; } }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 768px) {
+      header h1.glow { font-size: 2.2rem; }
+      .section h2.glow { font-size: 1.6rem; }
+      .icon-grid { gap: 15px; }
+      .icon-grid a { width: 50px; height: 50px; }
+      .icon-grid img, .icon-grid i { max-width: 30px; max-height: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <h1 class="glow">LAVYA DAMANIA</h1>
+    <p>STUDENT | Aspiring Engineer</p>
+  </header>
+
+  <main>
+    <!-- Profile -->
+    <section class="section fade-in">
+      <h2 class="glow">Profile</h2>
+      <p>An engineering student eager to acquire new skills and gain hands-on experience. I am looking for a challenging position where I can apply my technical expertise and practical knowledge.</p>
+    </section>
+
+    <!-- Experience -->
+    <section class="section fade-in">
+      <h2 class="glow">Experience</h2>
+      <ul>
+        <li><strong>TCET-ISTE: WORKING COMMITTEE</strong>
+          <ul>
+            <li>AC stem 7.0 – Achieved over 50 offline registrations within four days.</li>
+            <li>Designed several artworks for the event.</li>
+            <li>Managed Scavenger Hunt and discipline team.</li>
+          </ul>
+        </li>
+        <li><strong>Multicon 2025</strong>
+          <ul>
+            <li>Review paper presentation</li>
+            <li>Workshop on C/C++</li>
+            <li>Logistics team (Day 1)</li>
+            <li>Discipline team (Day 2)</li>
+          </ul>
+        </li>
+        <li><strong>Fiesta 2025</strong>
+          <ul>
+            <li>Dry run of performances</li>
+            <li>Technical team: rules and slots</li>
+            <li>Backstage operations</li>
+          </ul>
+        </li>
+        <li>Class Monitor: Appointed multiple times</li>
+        <li>Annual Function: Participated in dramas and dance</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="section fade-in">
+      <h2 class="glow">Education</h2>
+      <ul>
+        <li>BE, IT-A, Thakur College Of Engineering And Technology (2024–Present)</li>
+        <li>HSC, Prakash College – February 2024</li>
+        <li>SSC, Thakur Vidya Mandir High School – March 2022</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="section fade-in">
+      <h2 class="glow">Skills</h2>
+      <h3>Hard Skills</h3>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>DBMS</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Premiere Pro</li>
+        <li>Adobe Lightroom</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe After Effects</li>
+        <li>CapCut</li>
+      </ul>
+      <div class="icon-grid">
+        <!-- C -->
+        <a href="https://en.cppreference.com/w/c" target="_blank" title="C">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg" alt="C" style="width:40px; height:40px;" />
+        </a>
+
+        <!-- C++ -->
+        <a href="https://isocpp.org/" target="_blank" title="C++">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" style="width:40px; height:40px;" />
+        </a>
+
+        <!-- DBMS (MySQL) -->
+        <a href="https://www.mysql.com/" target="_blank" title="DBMS (MySQL)">
+          <img src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png" alt="DBMS" style="width:40px; height:40px;" />
+        </a>
+
+        <!-- Adobe Photoshop -->
+        <a href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noopener noreferrer" title="Adobe Photoshop">
+          Adobe Photoshop
+        </a>
+
+        <!-- Adobe Illustrator -->
+        <a href="https://www.adobe.com/products/illustrator.html" target="_blank" title="Adobe Illustrator">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator" style="width:40px; height:40px;" />
+        </a>
+
+        <!-- Adobe Premiere Pro -->
+        <a href="https://www.adobe.com/products/premiere.html" target="_blank" title="Adobe Premiere Pro">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="Premiere Pro" style="width:40px; height:40px;" />
+        </a>
+
+        <!-- Adobe After Effects -->
+        <a href="https://www.adobe.com/products/aftereffects.html" target="_blank" title="Adobe After Effects">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" alt="After Effects" style="width:40px; height:40px;" />
+        </a>
+
+        <!-- CapCut -->
+        <a href="#" title="CapCut (Unavailable in India)">
+          <img src="https://i.ibb.co/8D6j4y3/capcut-logo.png" alt="CapCut" style="width:40px; height:40px;" />
+        </a>
+
+        <!-- Adobe Lightroom -->
+        <a href="https://www.adobe.com/products/photoshop-lightroom.html" target="_blank" rel="noopener noreferrer" title="Adobe Lightroom">
+          Adobe Lightroom
+        </a>
+      </div>
+      </div>
+
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Good Communicator</li>
+        <li>Team Spirit</li>
+        <li>Active & Patient</li>
+        <li>Hardworking & Humble</li>
+        <li>Organising Events</li>
+      </ul>
+    </section>
+
+    <!-- Licenses & Certifications -->
+    <section class="section fade-in">
+      <h2 class="glow">Licenses & Certifications</h2>
+      <ul>
+        <li>
+          <strong>
+            <a href="https://www.dropbox.com/scl/fi/0fnh83d1wcterj653ie1p/.pdf.pdf?rlkey=l954p8rjknry3a4jow95hndyb&st=dl8jtoyb&dl=0" target="_blank">
+              Spoken Tutorial Certificate – Lavya Damania
+            </a>
+          </strong>  
+          <br><em>Issued: Mar 2025</em>
+        </li>
+        <li>
+          <strong>
+            <a href="https://drive.google.com/your-summer-internship-certificate" target="_blank">
+              Summer Internship – CyberPeace Foundation
+            </a>
+          </strong>  
+          <br><em>Issued: Jan 2025</em>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="section fade-in">
+      <h2 class="glow">Hobbies & Interests</h2>
+      <ul>
+        <li>Singing</li>
+        <li>Cooking</li>
+        <li>Interacting with people</li>
+        <li>Playing Story-driven Games</li>
+        <li>Writing</li>
+      </ul>
+    </section>
+
+    <!-- Personal Touch -->
+    <section class="section fade-in">
+      <h2 class="glow">About Me</h2>
+      <p>I am Lavya Damania – a curious learner who loves exploring creativity as much as technology. Along with engineering, I have a passion for designing, writing, and engaging with people. My goal is to keep growing not only as a student but as a person who adds value to every team and project I become part of.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="section fade-in">
+      <h2 class="glow">Contact</h2>
+      <p>📧 Email: <a href="mailto:lavyadamania@gmail.com">lavyadamania@gmail.com</a></p>
+      <p>📍 Location: Borivali East</p>
+
+      <div class="icon-grid">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/lavya-damania-6778472a7/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin" style="font-size:32px; color:#0A66C2;"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/lavya_damania_/" target="_blank" title="Instagram">
+          <i class="fab fa-instagram" style="font-size:32px; color:#E1306C;"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#00ffff" },
+        shape: { type: "circle", stroke: { width: 0, color: "#000" } },
+        opacity: { value: 0.5 },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#00ffff", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2, direction: "none", out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+        modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
